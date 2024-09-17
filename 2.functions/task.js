@@ -95,7 +95,6 @@ function makeWork(arrOfArr, func) {
     let maxWorkerResult = -Infinity
     for (let i = 0; i < arrOfArr.length; i++) {
      let res;
-     c 
         if (res > maxWorkerResult) {
             maxWorkerResult = res;
         }
