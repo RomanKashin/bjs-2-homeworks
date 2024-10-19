@@ -41,20 +41,20 @@ class PrintEditionItem {
   }
   
   class NovelBook extends Book {
-    constructor(author, name, releaseDate, pagesCount, state = 100, type = null) {
-      super(author, name, releaseDate, pagesCount, state, "novel");
+    constructor(author, name, releaseDate, pagesCount, state = 100, type = "novel") {
+      super(author, name, releaseDate, pagesCount, state, type);
     }
   }
   
   class FantasticBook extends Book {
-    constructor(author, name, releaseDate, pagesCount, state = 100, type = null) {
-      super(author, name, releaseDate, pagesCount, state, "fantastic");
+    constructor(author, name, releaseDate, pagesCount, state = 100, type = "fantastic") {
+      super(author, name, releaseDate, pagesCount, state, type);
     }
   }
   
   class DetectiveBook extends Book {
-    constructor(author, name, releaseDate, pagesCount, state = 100, type = null) {
-      super(author, name, releaseDate, pagesCount, state, "detective");
+    constructor(author, name, releaseDate, pagesCount, state = 100, type = "detective") {
+      super(author, name, releaseDate, pagesCount, state, type);
     }
   }
   
