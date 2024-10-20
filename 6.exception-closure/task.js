@@ -3,7 +3,7 @@
     if(isNaN(numbers)) {
      throw new Error ("Невалидное значение");
     } else {
-    return Number.parseFloat(value);
+    return numbers;
   }
 }
 
@@ -17,7 +17,6 @@ function validateCount(value) {
 }
 
 console.log(validateCount("123"));
-console.log(parseCount("привет"));
 
 
 class Triangle {
@@ -30,12 +29,11 @@ class Triangle {
     this.sideThree = sideThree;
   }
   get perimeter() {
-    this.perimeter = perimeter;
-    return perimeter = this.sideOne + this.sideTwo + this.sideThree;
+    return this.sideOne + this.sideTwo + this.sideThree;
   }
   get area() {
     let p = this.perimeter / 2;
-    return (Math.sqrt(p * (p - this.sideOne) * (p - this.sideTwo) * (p - this.sideThree))).toFixed(3);
+    return Number((Math.sqrt(p * (p - this.sideOne) * (p - this.sideTwo) * (p - this.sideThree))).toFixed(3));
   }
 }
 
@@ -55,4 +53,4 @@ function getTriangle(sideOne, sideTwo, sideThree) {
 }
 
 
-console.log(getTriangle(1, 10, 3));
+console.log(getTriangle(4, 4, 3));
